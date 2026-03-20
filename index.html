@@ -1,61 +1,114 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEST DNS - Gizlilik Politikası</title>
+    <title>DEST DNS - Privacy Policy</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        .container { background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        h1 { color: #000; border-bottom: 2px solid #eee; padding-bottom: 10px; text-align: center; }
-        h2 { color: #2c3e50; margin-top: 30px; }
-        p { margin-bottom: 15px; }
-        ul { margin-bottom: 20px; }
-        li { margin-bottom: 10px; }
-        .footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #777; border-top: 1px solid #eee; padding-top: 20px; }
-        .highlight { color: #e74c3c; font-weight: bold; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .container {
+            padding: 40px;
+            border: 1px solid #eaeaea;
+            border-radius: 16px;
+        }
+        h1 {
+            color: #000000;
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+        h2 {
+            color: #000000;
+            margin-top: 35px;
+            border-left: 4px solid #000;
+            padding-left: 15px;
+            font-size: 1.5em;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #444;
+        }
+        ul {
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.85em;
+            color: #888;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+        }
+        .highlight {
+            font-weight: 600;
+            color: #000;
+        }
+        .last-update {
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>DEST DNS Gizlilik Politikası</h1>
-        <p><strong>Son Güncelleme:</strong> 20 Mart 2026</p>
+        <h1>Privacy Policy</h1>
+        <p class="last-update"><strong>Last Updated:</strong> March 20, 2026</p>
 
-        <p>Bu Gizlilik Politikası, <strong>DEST DNS</strong> uygulamasının kullanıcı verilerini nasıl işlediğini, hangi izinleri neden kullandığını ve gizliliğinizi nasıl koruduğumuzu açıklar.</p>
+        <p>This Privacy Policy describes how <strong>DEST DNS</strong> ("we", "our", or "the app") handles user information, the purpose of required permissions, and our commitment to protecting your privacy.</p>
 
-        <h2>1. Veri Toplama ve Kullanımı</h2>
-        <p>Uygulamamız gizlilik odaklı bir araçtır ve şu prensiplerle çalışır:</p>
+        <h2>1. Data Collection and Usage</h2>
+        <p>DEST DNS is built with a "Privacy First" approach. Our data handling practices are as follows:</p>
         <ul>
-            <li><span class="highlight">Kişisel Veri Toplanmaz:</span> Uygulamamız isim, e-posta, telefon numarası, konum veya rehber gibi hiçbir kişisel veriyi toplamaz, saklamaz veya üçüncü taraflarla paylaşmaz.</li>
-            <li><span class="highlight">Hesap Gerekmez:</span> Uygulamayı kullanmak için kayıt olmanıza veya bir hesap oluşturmanıza gerek yoktur.</li>
+            <li><span class="highlight">No Personal Information:</span> We do not collect, store, or transmit any personally identifiable information (PII) such as names, email addresses, phone numbers, or device contacts.</li>
+            <li><span class="highlight">No Registration:</span> Users are not required to create an account or provide any login credentials to use the application.</li>
         </ul>
 
-        <h2>2. Android VpnService Kullanımı</h2>
-        <p>DEST DNS, temel işlevini yerine getirmek için Android'in <code>VpnService</code> API'sini kullanır:</p>
+        <h2>2. Android VpnService Usage</h2>
+        <p>To provide its core functionality, DEST DNS utilizes the Android <code>VpnService</code> API. It is important to understand how this is used:</p>
         <ul>
-            <li><strong>Amaç:</strong> Bu hizmet, sadece DNS sorgularınızı (web sitesi adres çözümlemeleri) seçtiğiniz güvenli DNS sunucularına yönlendirmek için kullanılır.</li>
-            <li><strong>Kapsam:</strong> VPN tüneli sadece DNS paketlerini işler; diğer internet trafiğiniz (videolar, dosyalar, kişisel mesajlar vb.) bu tünelden geçmez ve doğrudan mevcut ağınız üzerinden iletilir.</li>
+            <li><strong>Purpose:</strong> The VPN service is used exclusively to intercept and redirect your DNS queries (the requests made to resolve website names into IP addresses) to the secure DNS providers you select within the app.</li>
+            <li><strong>Scope:</strong> Only DNS traffic is routed through the local VPN tunnel. Your general internet traffic (web browsing data, video streaming, personal messages, etc.) is <span class="highlight">NOT</span> intercepted, monitored, or stored by the app.</li>
         </ul>
 
-        <h2>3. Trafik Logları ve Yerel Depolama</h2>
-        <p>Uygulama içindeki "Trafik" bölümü, hangi domain adreslerine sorgu yapıldığını görmenizi sağlar:</p>
+        <h2>3. Traffic Logs and Local Storage</h2>
+        <p>The "Traffic" feature within the app provides visibility into the domain names being resolved:</p>
         <ul>
-            <li>Bu veriler tamamen <strong>yereldir</strong>; sadece cihazınızın geçici hafızasında tutulur.</li>
-            <li>Bu veriler hiçbir uzak sunucuya gönderilmez. Uygulama kapatıldığında veya veriler temizlendiğinde bu kayıtlar kalıcı olarak silinir.</li>
+            <li><strong>Local Only:</strong> All traffic logs are stored strictly on your device's local memory (RAM/Cache).</li>
+            <li><strong>No Remote Transmission:</strong> These logs are never sent to our servers or any third-party servers.</li>
+            <li><strong>Auto-Deletion:</strong> Logs are permanently deleted when you clear them manually or when the application is closed.</li>
         </ul>
 
-        <h2>4. Reklam Hizmetleri (Google AdMob)</h2>
-        <p>Uygulamanın ücretsiz kalmasını ve geliştirilmesini desteklemek amacıyla Google AdMob reklamları kullanılmaktadır:</p>
+        <h2>4. Third-Party Advertising (Google AdMob)</h2>
+        <p>To keep the application free for everyone, we use Google AdMob to display advertisements:</p>
         <ul>
-            <li>AdMob, size uygun reklamlar sunmak için cihaz kimliği (Advertising ID) gibi anonim teknik verileri kendi politikaları çerçevesinde toplayabilir.</li>
-            <li>Daha fazla bilgi için <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik ve Şartlar</a> sayfasını ziyaret edebilirsiniz.</li>
+            <li>AdMob may use anonymous identifiers (such as the Android Advertising ID) to serve personalized or non-personalized ads.</li>
+            <li>You can review Google's data practices by visiting their <a href="https://policies.google.com/privacy" target="_blank">Privacy & Terms</a> page.</li>
         </ul>
 
-        <h2>5. İletişim</h2>
-        <p>Bu gizlilik politikasıyla ilgili herhangi bir sorunuz olması durumunda bizimle iletişime geçebilirsiniz.</p>
+        <h2>5. Third-Party DNS Providers</h2>
+        <p>When you select a DNS provider (e.g., Google DNS, Cloudflare, OpenDNS), your DNS queries are subject to that provider's own privacy policy. We encourage you to review the policies of any DNS service you choose to use.</p>
+
+        <h2>6. Contact Us</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy or our practices, please contact the developer through the official app store channels.</p>
 
         <div class="footer">
-            <p>&copy; 2026 DEST Software. Tüm hakları saklıdır.</p>
+            <p>&copy; 2026 DEST Software. All rights reserved.</p>
         </div>
     </div>
 </body>
